@@ -59,7 +59,9 @@ transport.sendMail({
 
 
 
-
+app.get("/",(req, res) => {
+    return res.send("Welcome to the backend ")
+})
 
 const port = process.env.PORT || 8080
 
